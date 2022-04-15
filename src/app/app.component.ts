@@ -7,4 +7,9 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  data="x";
+  updateDataEvent(item:String){
+    console.warn(item)
+    this.data=item;
+  }
 }
